@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300);
+@import url(https://fonts.googleapis.com/css?family=Handlee|Fredericka+the+Great);
 
 body {
   font-family: "Source Sans Pro", Arial, sans-serif;
@@ -8,6 +9,7 @@ body {
 
   font-weight: 300;
 }
+
 
 
 header {
@@ -30,9 +32,6 @@ h1 img {
   width: 300px;
 }
 
-.about p {
-  margin-top: 20px;
-}
 
 .top {
   margin: 0 70px;
@@ -60,7 +59,9 @@ nav a:hover {
 
 #laptop {
 top:75px;
-  background-image: url(../images/back.png);
+  background-image: url(../images/o.png);
+  /*back.png*/
+
 }
 
 #web {
@@ -149,6 +150,7 @@ top: 300px;
 
 
 h2 {
+  font-family:"Fredericka the Great";
   z-index: 10;
 top: 100px;
   color: #fff;
@@ -233,6 +235,7 @@ text-align: center;
 /*Make the background and text appear on hover by changing the opacity*/
 .state-full:hover {
 opacity: 0.4;
+
 }
 
 .boxed {
@@ -291,8 +294,11 @@ opacity: 0.8;
 -moz-transform: translateX(40%);
 -ms-transform: translateX(40%);
 transform: translateX(40%);
+  margin-top: 20px;
 
 }
+
+
 
 /*.service {
   -webkit-transform: translateY(-130px);
@@ -312,13 +318,13 @@ transform: translateY(-130px);
 .info-tiles {
   background-color: #EFEDED;
   margin: 0 15px;
-  padding: 30px 0 40px 20px;
+  padding: 30px 0 40px 0;
   /*When adding a border, use the following values, style, thickness, colour*/
   border: solid 1px #e1e1e1;
   /*To round border edges*/
   border-radius: 4px;
   text-align: center;
-min-height: 350px;
+min-height: 330px;
 }
 
 .info-tiles img {
@@ -565,7 +571,20 @@ opacity: 0.8;
 font-size: 14px;
 }
 
+@media screen and (max-width:1024px){
+  .info-tiles {
+    margin: 0 5px;
+  }
+  .scroll-effect{
+      background-attachment: scroll;
+  }
+  .boxed {
+    font-size: 18px;
+    width: auto;
+    left: 27%;
+  }
 
+}
 
 @media screen and (max-width:815px){
   .trigger{
@@ -592,14 +611,13 @@ margin-top: 70px;
   margin: 0 20px;
 }
 
-.info-tiles {
-  margin: 5px;
-}
+
+
 .about p{
   width: 80%;
-  -webkit-transform: translateX(9%);
--moz-transform: translateX(9%);
--ms-transform: translateX(9%);
+  -webkit-transform: translateX(15%);
+-moz-transform: translateX(15%);
+-ms-transform: translateX(15%);
 transform: translateX(15%);}
 }
 
@@ -609,12 +627,12 @@ transform: translateX(15%);}
 .me img {
   margin-left: 90px;
 }
-
 .boxed {
-  font-size: 16px;
+  font-size: 17px;
   width: auto;
   left: 25%;
 }
+
 }
 
 @media screen and (max-width:646px){
@@ -661,9 +679,7 @@ nav {
     position: relative;
   }
 
-  .scroll-effect{
-      background-attachment: scroll;
-  }
+
 
 .boxed {
   width: 50%;
